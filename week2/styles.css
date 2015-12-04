@@ -1,0 +1,34 @@
+/*I seriously recommend for all the properties you use to tray to put them in alphabetical order so will be easier to another developer to debug your code.*/
+/*you have add these modifier id="headTitle" class="headTitle" in you index.html like this
+
+  <h1 id="headTitle" class="headTitle">Responsive website development and design</h1>
+  
+*/
+h1{
+	/*this property sets a border of 2px of solid line with a orange color - I recommend to use border to see how is the style looking, how is going, before that you can comment the property   */
+	border: 2px solid orange;
+	/*this property sets the width to the 100% of the page*/
+	width: 100%;
+}
+h1:hover{
+	/*This property sets the font weight to a one more thin*/
+	font-weight: lighter;
+	/*this property changes the font family to helvetica*/
+	font-family: Helvetica;
+}
+
+#headTitle{
+	/*this property set the color to green for the tag h1 with the id="headhTitle"*/
+	color: orange;
+}
+.headTitle{
+	/*I use text-align to center the text and get in the middle of the web site for the tag h1 which contains the class="headTitle".*/
+	text-align: center;
+	
+}
+#headTitle:hover{
+	/*this property set the color to green for the tag h1 with the id="headhTitle" and mouse is over that tag that exist in the code*/
+	color: green;
+	/*this transform all the text to uppercase*/
+	text-transform: uppercase;
+}

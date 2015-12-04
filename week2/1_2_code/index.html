@@ -12,8 +12,12 @@
 		  type="text/css"
 		  href="styles.css"
 	      />	
+	      <style type="text/css"></style>
 	</head>
-	<body>
+	<body onload="imprime()" style="">
+	<blockquote cite="http://example.com/facts">
+		<p></p>
+	</blockquote>
 		<a 
 		href="index.html">
 			Home
@@ -42,6 +46,14 @@
 			</div>
 		</div>
 	</div>
+	<script>
+	function imprime(){
+		var x=5; alert(x+y);
+	}
+	var x=3; var y=2;
+	imprime();
+	alert(x+y);
+	</script>
 
 	</body>
 </html>
