@@ -1,0 +1,703 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+/* el atributo background se usa en body, asi como en etiquetas que hagan la funcion de contenedor, 
+	div, article, section, footer...
+	*/
+  background-color: #e4f1fe;
+  color: #95a5a6;
+/* el atributo font-family sirve para agregarle un tipo de fuente al la pagina web */
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+header {
+  align-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 -0.5px 5px 0 rgba(0,0,0,0.75);
+  display: inline-flex;
+  flex-direction: row;
+  left: -1px;
+  justify-content: center;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+header #logo {
+  display: inline-flex;
+  height: 60px;
+  width: 25%;
+}
+header #logo #imgsLogo {
+  background: url("../img/me.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  height: 60px;
+  order: 1;
+  width: 113px;
+}
+header #logo #tituloWeb {
+  align-items: center;
+  color: #22313f;
+  display: flex;
+  justify-content: left;
+  font-size: 1.6em;
+  height: 60px;
+  order: 1;
+  width: 440px;
+}
+header nav {
+  font-size: 1em;
+  height: 60px;
+  width: 35%;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline-flex;
+  flex-direction: row;
+}
+header nav ul li a {
+  align-content: center;
+  align-items: center;
+  color: rgba(34,49,63,0.6);
+  display: flex;
+  height: 60px;
+  padding: 0.1em 0.2em;
+  order: 1;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  align-content: center;
+  align-items: center;
+  color: #22313f;
+  display: flex;
+  height: 60px;
+  padding: 0.1em 0.2em;
+  order: 1;
+  text-decoration: none;
+}
+/*	caja principal de la primera seccion de la web	*/
+/*CAJA con borde NEGRO cabecera ES LA CAJA EXTERNA MAS GRANDE DE TODAS QUE CONTENDRA A TODAS LAS DEMAS*/
+#cabecera {
+  background: url("../img/abstract2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: transparent;
+  background-size: 100% 100%;
+  height: 650px;
+  width: 100%;
+/*INICIO MENU
+		CAJA con borde AMARILLO menu
+		CONTENDRA AL MENU
+		es importante observar que la caja va de esquina a esquina esta al 100% del ancho de la pantalla 
+			*/
+}
+#menu {
+  align-items: center;
+  background-color: rgba(34,49,63,0.6);
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+/*CAJA con borde ANARANJADO hace referencia a la etiqueta NAV*/
+/*aca utilizamos el parametro hover, el cual es la accion o lo que va a ocurrir cuando 
+		coloquemos el cursos sobre el objeto que estamos manipulando o al cual vamos a hacer click
+		*/
+}
+#menu nav {
+  font-size: 1.2em;
+  height: 50px;
+  margin-left: 45%;
+  width: 50%;
+}
+#menu ul {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  list-style: none;
+/*CAJA con borde BLANCO hace referencia a la etiqueta LI*/
+}
+#menu li {
+/*border 1px solid blanco*/
+  padding: 0 0.8em 0 0;
+/*CAJA con borde VERDE OSCURO hace referencia a la etiqueta A*/
+}
+#menu a {
+/*border 1px solid nephritis*/
+  display: flex;
+  color: #e4f1fe;
+  text-decoration: none;
+}
+#menu a:hover {
+  border-bottom: 1px solid #3498db;
+  color: #3498db;
+  text-decoration: none;
+}
+#menu .actived {
+  border-bottom: 1px solid #3498db;
+  color: #3498db;
+  text-decoration: none;
+}
+.activos {
+  color: #3498db;
+  text-decoration: underline;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+}
+/*Fin del menu
+
+---
+*/
+/*contenido de la caja gris grande debajo de la caja amarilla del menu, 
+que va a contener:
+1era una caja que va a ser mas pequeña para poder centrarla, esta caja va a contener a las siguientes cajas
+2era caja para la imagen, ubicada al lado izquierdo de la pantalla
+3da caja para el texto y boton ubicada a la derecha.
+*/
+#imagenNombre {
+/*border 3px solid asbestos */
+  background-color: rgba(34,49,63,0.6);
+  height: 550px;
+  width: 100%;
+/* es la caja azul noche, su ancho es mas pequeño 
+		
+		lo cual nos permite asignarle un margen izquierdo y un margen derecho,
+		para lograr el efecto de que quede centrada
+
+inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta caja ocupa el 80% de ancho de la web y va centrada
+		*/
+}
+#contenedorCentrado {
+/*border 2px solid midnightblue*/
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* inicio DE LA CAJA azul claro, CONTENEDORA DE LA CAJA de la foto, esta caja ocupa 40% de la caja azul oscuro*/
+#imagenFotoIzquierda {
+/*border 2px solid belizehola*/
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+}
+#fotosj {
+  background: url("../img/me.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+/*border 2px solid black*/
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  height: 45%;
+  margin-left: 40%;
+  margin-top: -80px;
+  width: 55%;
+/*fin de la caja azul claro*/
+/*inicio DE LA CAJA blanca, 
+	CONTENEDORA DE LA CAJA de blanca, 
+	para el titulo,subtitulo y boton, 
+	esta caja ocupa 60% de la caja azul oscuro*/
+}
+#imagenTituloDerecha {
+/*border 2px solid blanco*/
+  color: #ecf0f1;
+  height: 50%;
+  text-align: left;
+  width: 60%;
+/*div utilizado para dar aspecto de boton claro*/
+/*ACA como pueden observar tomamos nuevamente el boton
+	pero con la particularidad de que le pasamos la propiedad
+		:hover la cual usaremos mucho, esta asociada a la accion
+		que se ejecuta cuando pasamos el cursos sobre cualquier objeto	
+		*/
+}
+#imagenTituloDerecha h1 {
+  font-size: 4em;
+}
+#imagenTituloDerecha h4 {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+#imagenTituloDerecha #botonAspect {
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  width: 600px;
+}
+#imagenTituloDerecha #botonAspect ul {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  width: 600px;
+}
+#imagenTituloDerecha #botonAspect ul li {
+  list-style: none;
+  text-decoration: none;
+  width: 200px;
+}
+#imagenTituloDerecha #botonAspect ul li a {
+  align-items: center;
+  background-color: rgba(228,241,254,0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  color: #22313f;
+  justify-content: center;
+  height: 50px;
+  text-decoration: none;
+  width: 140px;
+}
+#imagenTituloDerecha #botonAspect ul li a:hover {
+  background-color: #e4f1fe;
+  color: #22313f;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  text-decoration: none;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+  width: 140px;
+}
+/*Espacio en blanco para separar secciones*/
+.divisorBlanco {
+  background-color: #e4f1fe;
+/*border 1px solid carrot*/
+  clear: both;
+  display: flex;
+  height: 70px;
+  width: 100%;
+}
+/*fin del class divisor blanco, que estara repetido en varias partes del sitio web.*/
+/*Caja del titulo*/
+.titles {
+  align-items: center;
+  background-color: #e4f1fe;
+  color: #000;
+  display: flex;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: normal;
+  justify-content: flex-start;
+  width: 100%;
+/*Fin de la caja del titulo*/
+}
+.titles h2 {
+  height: 50px;
+  width: 40%;
+}
+.titles a {
+  align-items: center;
+  color: rgba(34,49,63,0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  text-decoration: none;
+  width: 40%;
+}
+.titles a:hover {
+  color: #22313f;
+  text-decoration: none;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+}
+/*Inicio de who am i*/
+#whoiam {
+  background-color: #22313f;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+}
+#whoiam p {
+  color: #e4f1fe;
+  height: 90%;
+  text-align: justify;
+  width: 90%;
+}
+/*Fin de who am i*/
+/*Inicio del contenido del portafolio*/
+#portafolio {
+  align-items: center;
+  background-image: url("http://www.designshock.com/wp-content/uploads/2015/02/abstract3-copia.jpg");
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+}
+#columnaA {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50%;
+  width: 90%;
+}
+#columnaB {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50%;
+  width: 90%;
+}
+#preview {
+  background-color: #fff;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  height: 95%;
+  width: 30%;
+}
+#webprev {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  height: 85%;
+  width: 100%;
+}
+#webprev iframe {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+#webtitle {
+  background-color: #3498db;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  color: #e4f1fe;
+  height: 15%;
+  width: 100%;
+}
+#webtitle a {
+  align-items: center;
+  color: #e4f1fe;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
+#webtitle a:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+}
+/*Columna izquierda unica columna, grande de alto=height*/
+/*Caja del titulo*/
+#webprevFreeCodeCamp {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  height: 85%;
+  position: relative;
+  width: 100%;
+}
+#webprevFreeCodeCamp iframe {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+#webtitleFreeCodeCamp {
+  background-color: #22313f;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  color: #e4f1fe;
+  height: 15%;
+  width: 100%;
+}
+#webtitleFreeCodeCamp a {
+  align-items: center;
+  color: #e4f1fe;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
+#webtitleFreeCodeCamp a:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+}
+/*Columna izquierda unica columna, grande de alto=height*/
+/*Fin de la seccion portafolio*/
+/*Inicio de la seccion de articulos*/
+#blogBody {
+/*esta caja contendra a la caja utilizada para centrar los articulos*/
+  background-color: #e4f1fe;
+  font-family: "Helvetica" sans-serif;
+  color: #000;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 600px;
+}
+#boxBlogTitles {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 45%;
+}
+#postsBlogs {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #22313f;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10%;
+  width: 80%;
+}
+#datePost {
+  align-items: center;
+  color: #e4f1fe;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+}
+#linkPost {
+  align-items: center;
+  color: #e4f1fe;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 70%;
+}
+#linkPost a {
+  align-items: center;
+  color: #e4f1fe;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
+#linkPost a:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+}
+#blogLogin {
+  border: 1px solid #ffa500;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 45%;
+}
+/*Fin de articulos*/
+/*Inicio de la seccion de contacto*/
+#contacto {
+  background-image: url("http://dealfuel.com/wp-content/uploads/2015/06/color191.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: transparent;
+  background-color: #323232;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  justify-content: center;
+  width: 100%;
+}
+/*cuadro utilizado para ser centrado*/
+#contactoCentrado {
+  display: inline-flex;
+  height: 100%;
+  width: 90%;
+}
+#columnaImg {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+/*imagen*/
+}
+#imag {
+  background: url("../img/me.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-border-radius: 70%;
+  -moz-border-radius: 70%;
+  -ms-border-radius: 70%;
+  -o-border-radius: 70%;
+  border-radius: 70%;
+  height: 100%;
+  width: 100%;
+/*columna de informacion de contacto*/
+}
+#columnaContac {
+  align-items: center;
+  color: #e4f1fe;
+  display: flex;
+  flex-direction: column;
+  justify: center;
+  height: 100%;
+  justify-content: space-around;
+  width: 50%;
+}
+#columnaContac h2,
+#columnaContac h3,
+#columnaContac p,
+#columnaContac h4 {
+  order: 0;
+}
+#columnaContac h2 {
+  font-size: 3.5em;
+}
+#columnaContac h3 {
+  font-size: 2em;
+}
+#columnaContac p,
+#columnaContac h4 {
+  font-size: 1.5em;
+}
+#columnaContac ul {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  width: 90%;
+}
+#columnaContac ul li {
+  list-style: none;
+  text-decoration: none;
+  width: 150px;
+}
+#columnaContac ul li a {
+  align-items: center;
+  background-color: rgba(228,241,254,0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  color: #22313f;
+  justify-content: center;
+  height: 50px;
+  text-decoration: none;
+  width: 100px;
+}
+#columnaContac ul li a:hover {
+  background-color: #e4f1fe;
+  color: #22313f;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  text-decoration: none;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+  width: 120px;
+}
+#columnaContac a {
+  align-items: center;
+  background-color: rgba(228,241,254,0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  color: #22313f;
+  font-size: 0.9em;
+  justify-content: space-around;
+  height: 50px;
+  text-decoration: none;
+  width: 250px;
+}
+#columnaContac a:hover {
+  background-color: #e4f1fe;
+  color: #22313f;
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  text-decoration: none;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+  width: 300px;
+}
+/*fin de la seccion de contacto*/
+/*inicio del pie de pagina*/
+footer {
+  align-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: center;
+  width: 100%;
+}
+#autores > {
+  height: 50px;
+  width: 100%;
+/*fin de la seccion de pie de pagina*/
+}
+/*BIEN FIN DE NUESTRA PRIMERA PAGINA*/

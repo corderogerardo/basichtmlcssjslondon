@@ -1,0 +1,72 @@
+@media (min-width: 768px) {
+  .navbar-collapse {
+	height: auto;
+	border-top: 0;
+	box-shadow: none;
+	max-height: none;
+	padding-left:0;
+	padding-right:0;
+  }
+  .navbar-collapse.collapse {
+	display: block !important;
+	width: auto !important;
+	padding-bottom: 0;
+	overflow: visible !important;
+  }
+  .navbar-collapse.in {
+	overflow-x: visible;
+  }
+
+.navbar
+{
+	height: 100%;
+	max-width:250px;
+	margin-right: 0;
+	margin-left: 0;
+	position: fixed;
+}	
+
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header
+{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+.navbar-right .dropdown-menu {left:0;right:auto;}
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+	margin-right: 0;
+}
+.myphoto{
+	  -webkit-border-radius: 200px;
+	  -moz-border-radius: 200px;
+	  -ms-border-radius: 200px;
+	  -o-border-radius: 200px;
+	  border-radius: 200px;
+	  height: 70%;
+	  width: 70%;
+}
+.container{
+	margin-left: 250px;
+	height: 670px;
+	width: auto;
+}
+}
+
+@media (max-width: 767px) {
+.img-responsive{
+	  height: 0%;
+	  width: 0%;
+}
+.container{
+	height: 670px;
+	width: auto;
+}
+}

@@ -1,0 +1,23 @@
+#socials-networks {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+#socials-networks ul {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+}
+#socials-networks ul li {
+  padding: 10px;
+  width: 100%;
+}
+.nav li a {
+  font-size: 1.3em;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+}
